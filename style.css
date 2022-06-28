@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 :root {
-  --primary: #8bc044;
-  --secondary: #eec55d; 
+  --primary: #151330;
+  --secondary: #504f8d; 
   --background: #111;
-  --grey: #9b9eac;
+  --blue: #86a2ce;
   --light: #fff;
   --dark: #0a0a0a;
   --main-font:  'League Gothic', sans-serif;
@@ -12,19 +12,20 @@
   --sidePadding: 12%;
 } 
 
-html {
-    scroll-behavior: smooth;
-  }
-  
+ html {
+     height: 100%;
+  } 
+   
   body {
     font-family: var(--main-font);
     padding: 0 ; 
     margin: 0;
+    background: linear-gradient(#151330, #7166c4);
   }
   
   nav {
-    background-color: #111;
-    color: white;
+    background-color: var(--primary);
+    color: var(--light);
     padding: 20px 50px;
   }
   
@@ -37,7 +38,7 @@ html {
   .search {
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: var(--secondary);
     padding: 10px 20px;
     border-radius: 10px;
   }
@@ -48,12 +49,12 @@ html {
   }
   
   .searchInput::placeholder {
-    color: lightgray;
+    color: var(--light);
   }
   
   .limitedOffer {
     font-size: 20px;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid var(--blue);
     cursor: pointer;
   }
   
@@ -66,12 +67,12 @@ html {
   .menuItem {
     margin-right: 50px;
     cursor: pointer;
-    color: lightgray;
+    color: var(--light);
     font-weight: 400;
   }
   
   .slider {
-    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    background: linear-gradient(#151330, #7166c4);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     overflow: hidden;
   }
@@ -108,7 +109,7 @@ html {
     font-size: 60px;
     font-weight: 900;
     text-align: center;
-    color: white;
+    color: var(--light);
     z-index: 1;
   }
   
@@ -116,11 +117,11 @@ html {
     position: absolute;
     top: 10%;
     left: 10%;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
     text-align: center;
-    color: white;
-    border: 1px solid gray;
+    color: var(--dark);
+    border: 1px solid var(--light);
     z-index: 1;
   }
   
@@ -130,48 +131,48 @@ html {
     right: 10%;
     font-size: 30px;
     font-weight: 900;
-    color: white;
-    border: 1px solid gray;
-    background-color: black;
+    color: var(--light);
+    border: 1px solid var(--blue);
+    background-color: var(--dark);
     z-index: 1;
     cursor: pointer;
   }
   
   .buyButton:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--light);
+    color: var(--dark) ;
   }
   
   .sliderItem:nth-child(1) .sliderBg {
-    background-color: #369e62;
+    background-color: var(--primary);
   }
   .sliderItem:nth-child(2) .sliderBg {
-    background-color: rebeccapurple;
+    background-color: var(--primary);
   }
   .sliderItem:nth-child(3) .sliderBg {
-    background-color: teal;
+    background-color: var(--primary);
   }
   .sliderItem:nth-child(4) .sliderBg {
-    background-color: cornflowerblue;
+    background-color: var(--primary);
   }
   .sliderItem:nth-child(5) .sliderBg {
-    background-color: rgb(124, 115, 80);
+    background-color: var(--primary);
   }
   
   .sliderItem:nth-child(1) .sliderPrice {
-    color: #369e62;
+    color: var(--secondary);
   }
   .sliderItem:nth-child(2) .sliderPrice {
-    color: white;
+    color: var(--light);
   }
   .sliderItem:nth-child(3) .sliderPrice {
-    color: teal;
+    color: var(--secondary);
   }
   .sliderItem:nth-child(4) .sliderPrice {
-    color: cornflowerblue;
+    color: var(--secondary);
   }
   .sliderItem:nth-child(5) .sliderPrice {
-    color: cornsilk;
+    color: var(--secondary);
   }
   
   .features {
@@ -200,14 +201,14 @@ html {
   }
   
   .featureDesc {
-    color: gray;
+    color: var(--blue);
     width: 50%;
     height: 100px;
   }
   
   .product {
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: var(--light)smoke;
     position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   }
@@ -215,7 +216,7 @@ html {
   .payment {
     width: 500px;
     height: 500px;
-    background-color: white;
+    background-color: var(--light);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -231,7 +232,7 @@ html {
   
   .payTitle {
     font-size: 20px;
-    color: lightgray;
+    color: var(--blue);
   }
   
   label {
@@ -243,7 +244,7 @@ html {
     padding: 10px;
     margin: 10px 0px;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--blue);
   }
   
   .payInput::placeholder {
@@ -275,8 +276,8 @@ html {
     left: 0;
     -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
-    background-color: #369e62;
-    color: white;
+    background-color: var(--primary);
+    color: var(--light);
     border: none;
     cursor: pointer;
   }
@@ -285,8 +286,8 @@ html {
     width: 20px;
     height: 20px;
     position: absolute;
-    background-color: gray;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--light);
     top: 10px;
     right: 10px;
     display: flex;
@@ -315,7 +316,7 @@ html {
   
   .productDesc {
     font-style: 24px;
-    color: gray;
+    color: var(--blue);
   }
   
   .colors,
@@ -328,7 +329,7 @@ html {
     width: 32px;
     height: 32px;
     border-radius: 5px;
-    background-color: black;
+    background-color: var(--dark);
     margin-right: 10px;
     cursor: pointer;
   }
@@ -339,7 +340,7 @@ html {
   
   .size {
     padding: 5px 20px;
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     margin-right: 10px;
     cursor: pointer;
     font-size: 20px;
@@ -348,15 +349,15 @@ html {
   .productButton {
     float: right;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     font-weight: 600;
     cursor: pointer;
   }
   
   .productButton:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--secondary);
+    color: var(--dark);
   }
   
   .gallery {
@@ -379,8 +380,8 @@ html {
   
   .nsItem {
     flex: 1;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -425,7 +426,7 @@ html {
   
   .fListItem {
     margin-bottom: 10px;
-    color: gray;
+    color: var(--blue);
     cursor: pointer;
   }
   
@@ -443,8 +444,8 @@ html {
   
   .fButton {
     padding: 5px;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
   }
   
   .fIcons{
@@ -461,6 +462,34 @@ html {
     font-weight: 300;
     font-size: 14px;
   }
+  /*.Button{ 
+    background-color: var(--primary);
+    border-radius: 50%;
+  } */ 
+  .Button:hover {
+    background-color: var(--light);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    margin: auto 0;
+    border: 1px solid var(--primary);
+    transition: background 300ms ease-in, color 300ms ease-in;
+  }
+
+  #Button1 {
+    float: left;
+    width: 50%;
+    background-color: var(--primary);
+    border-radius: 50%;
+  }
+  #Button2 {
+    float: right;
+    width: 50%;
+    background-color: var(--primary);
+    border-radius: 50%;
+  }
+
 
   @media screen and (max-width:480px) {
     nav{
@@ -502,7 +531,7 @@ html {
       top: unset;
       bottom: -50;
       left: 0;
-      background-color: lightgrey;
+      background-color: var(--primary);
     }
   
     .buyButton{
@@ -567,7 +596,7 @@ html {
       padding: 20px;
       width: 90%;
       align-items: center;
-      background-color: whitesmoke;
+      background-color: var(--light)smoke;
     }
   
     .payment{
@@ -592,7 +621,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #130f40;
+      background-color: var(--primary);
       font-family: 'Lato' !important;
     }
     .search{
@@ -610,9 +639,9 @@ html {
       outline: none;
       border-radius: 25px;
       transition: all .5s ease-in-out;
-      background-color: #22a6b3;
+      background-color: var(--secondary);
       padding-right: 40px;
-      color:#fff;
+      color: var(--light);
     }
     .searchInput::placeholder{
       color:rgba(255,255,255,.5);
@@ -649,6 +678,4 @@ html {
       border-bottom:1px solid rgba(255,255,255,.5);
       transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
     }
-
-    
   }
