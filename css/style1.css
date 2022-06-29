@@ -3,6 +3,7 @@
 :root {
   --primary: #151330;
   --secondary: #504f8d; 
+  --pinky: #cbbaed ; 
   --background: #111;
   --blue: #86a2ce;
   --light: #fff;
@@ -40,6 +41,38 @@
     padding: 10px 20px;
     border-radius: 10px;
   }
+
+  #SearchButton { 
+    border: none ; 
+    background-color: var(--secondary); 
+  }
+
+  .main-nav-elements {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
+  .main-nav-element,
+  .hover-element {
+    list-style: none;
+    text-transform: uppercase;
+    margin: auto 1em;
+    font-weight: 500;
+  }
+  .main-nav-element > a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 1em 0;
+
+  }
+  
+  .main-nav-element:hover > a,
+  .hover-element:hover > a {
+    color: var(--secondary) ; 
+    text-decoration: underline;
+    text-decoration-color: var(--light);
+
+  }
+
   
   .searchInput {
     border: none;
@@ -50,16 +83,183 @@
     color: var(--light);
   }
   
-  .limitedOffer {
-    font-size: 20px;
-    border-bottom: 2px solid var(--blue);
-    cursor: pointer;
+ .Body{ 
+  margin:0px ; 
+  padding:0px ;
+ } 
+ .Body ul{ 
+  list-style: none;
+ }
+ .Body a { 
+ text-decoration: none;
+ }
+  .container { 
+    width:100% ; 
+    height: 100vh; 
+    background-color: var(--primary); 
+    display:flex ; 
+    justify-content: center;
+    align-items: center  ; 
   }
-  
+  .box { 
+    width:350px ; 
+    height: 610px ; 
+    background-color: var(--secondary); 
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    display: flex ; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10 px ; 
+
+  }
+
+  .model{ 
+    height: 350px ; 
+    max-height: 100% ;
+    max-width: 100%;
+  }
+
+  .details { 
+  display : flex ; 
+  flex-direction: column;
+  align-items: center ;
+  width: 300px ; 
+  }
+
+  details p { 
+    font-family: var(--main-font);
+    font-weight: bold;
+    color: var(--primary) ; 
+    text-align: center ; 
+    margin-top: 20px ; 
+  }
+  Product { 
+    color : var(--secondary) ; 
+    font-weight: bold ;
+    letter-spacing: 2px;
+    font-family: var(--main-font); 
+    font-size: 25 px ;
+  }
+
+  .box:hover{
+    background-color: var(--blue);
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+  }
+  .price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+    margin-bottom: 23px;
+  }
+  .buy-btn{
+    width:160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    color:#252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+  }
+  .buy-btn:hover{
+    color:#FFFFFF;
+    background-color: var(--pinky);
+    transition: all ease 0.3s;
+  }
+  .item-a { 
+    margin: 35px;
+  }
+  /*--responsive for mobile phone--*/
+  @media(max-width:720px){
+    .box{
+      width: 94%;
+      height: 500px;
+    }
+    .model{
+      height:250px;
+    }
+    .details p{
+      font-size: 16px;
+      width: 250px;
+    }
+  } 
+.cs-hidden { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
   .navBottom {
     display: flex;
-    align-items: center;
+    align-items: center ; 
     justify-content: center;
+    text-transform:uppercase;
+  
+    width:150px;
+    text-align:center;
+    line-height:50px; 
+    
+    position: absolute;
+    left:0;right:0;top:27%;
+    margin:auto;
+    transform:translateY(-50%);
+  }
+
+  .navBottom span {
+    position:relative;
+    z-index:999;
+    color:#fff;
+  }
+  .navBottom:before {
+    content:'';
+    background: var(--secondary);
+    width:128px;
+    height:36px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    
+    animation: 1.5s navBottomBefore infinite ease-in-out;
+  }
+  
+  @keyframes navBottomBefore {
+    0%   {transform:translateX(-14px);}
+    50%  {transform:translateX(14px);}
+    100% {transform:translateX(-14px);}
+  }
+  
+  
+  .navBottom:after {
+    content:'';
+    background: var(--blue);
+    width:14px;
+    height:60px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    opacity:.5;
+    
+    animation: 1.5s navBottomAfter infinite ease-in-out;
+  }
+  
+  @keyframes navBottomAfter {
+    0%   {transform:translateX(-50px);}
+    50%  {transform:translateX(50px);}
+    100% {transform:translateX(-50px);}
   }
   
   .menuItem {
