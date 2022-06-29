@@ -67,7 +67,7 @@
   
   .main-nav-element:hover > a,
   .hover-element:hover > a {
-    color: var(--secondary) ; 
+    color: var(--pinky) ; 
     text-decoration: underline;
     text-decoration-color: var(--light);
 
@@ -164,9 +164,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--dark);
     margin-bottom: 30px;
-    color:#252525;
+    color: var(--light);
     font-weight: 700;
     letter-spacing: 1px;
     font-family: calibri;
@@ -174,10 +174,37 @@
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
   }
   .buy-btn:hover{
-    color:#FFFFFF;
+    color:var(--light);
     background-color: var(--pinky);
     transition: all ease 0.3s;
   }
+  #AllProducts {
+    width:160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    margin-bottom: 30px;
+    color: var(--light);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px var(--pinky);
+    position: absolute;
+    top: 105%;
+    left: 46.7%;
+  }
+
+  #AllProducts:hover {
+    color:var(--light
+    );
+    background-color: var(--pinky);
+    transition: all ease 0.3s;
+  }
+
+
   .item-a { 
     margin: 35px;
   }
