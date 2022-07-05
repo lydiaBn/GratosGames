@@ -6,19 +6,11 @@
     <title>GratosGames</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <script src="https://kit.fontawesome.com/1d1786f180.js" crossorigin="anonymous"></script> 
+
   </head>
 
   <body>
-        <!-- PRELOADER START -->
-        <div class="loader-wrapper">
-            <div class='cssload-loader'>
-                <div class='cssload-inner cssload-one'></div>
-                <div class='cssload-inner cssload-two'></div>
-                <div class='cssload-inner cssload-three'></div>
-            </div>
-        </div>
-        <!-- PRELOADER END --> 
-
     <nav id="nav">
       <div class="navTop">
         <div class="navItem">
@@ -51,23 +43,15 @@
         </div>
 
         <div class="navItem">
-          <div class="search">
-            <input type="text" placeholder="Search..." class="searchInput" />
-
-            <button
-              id="SearchButton"
-              style="padding: 10px"
-              onclick="location.href=''"
-              type="button"
-            >
-              <img
+          <div class="search-box">
+            <button class="btn-search"> <img
                 src="img\search-interface-symbol.png"
                 width="20"
                 height="20"
                 alt=""
-                class="searchIcon"
-              />
-            </button>
+                class="fas fa-search"
+              /></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
           </div>
         </div>
 
@@ -337,58 +321,55 @@
         </div>
       </div>
       <footer>
-        <div class="footerLeft">
-          <div class="footerMenu">
-            <h1 class="fMenuTitle">About Us</h1>
-            <ul class="fList">
-              <li class="fListItem">Team</li>
-              <li class="fListItem">Contact</li>
-              <li class="fListItem">Affiliates</li>
+        <div id="part1"  class="part">
+          <p>GratosGames</p>
+          <ul class="lastfoot">
+          <li  ><a href="#"> Who are we ?</a></li>
+          <li  ><a href="#">Contact</a></li>
+          <li  ><a href="#">Terms & Conditions</a></li>
+          <li  ><a href="#">Products</a></li>
+          <li ><a href="#" class="empty">c</a></li>
+          <li  ><a href="#" class="empty">P </a></li>
+          </ul>
+      </div>
+      <div id="part2"  class="part">
+          <p>Help</p>
+          <ul class="lastfoot">
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">+23155647854</a></li>
+          <li><a href="#" class="empty">c</a></li>
+          <li><a href="#" class="empty">P </a></li>
+          <li><a href="#" class="empty">c</a></li>
+          <li><a href="#" class="empty">P </a></li>       
+          </ul>
+      </div>
+      <div id="part3"  class="part">
+          <p id="part31" class="flwtext1"  >Follow Us on Social Media</p>
+          <ul class="wrapper">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fab fa-twitter"></i></span>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+              </li>
             </ul>
-          </div>
-          <div class="footerMenu">
-            <h1 class="fMenuTitle">Useful Links</h1>
-            <ul class="fList">
-              <li class="fListItem">Support</li>
-              <li class="fListItem">FAQ</li>
-              <li class="fListItem">Feedback</li>
-              <li class="fListItem">Stories</li>
-            </ul>
-          </div>
-          <div class="footerMenu">
-            <h1 class="fMenuTitle">Products</h1>
-            <ul class="fList">
-              <li class="fListItem">Valorant Stuff</li>
-              <li class="fListItem">Lol Stuff</li>
-              <li class="fListItem">Stuff1</li>
-              <li class="fListItem">Stuff2</li>
-              <li class="fListItem">Stuff3</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footerRight">
-          <div class="footerRightMenu">
-            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-            <div class="fMail">
-              <input type="text" placeholder="your@email.com" class="fInput" />
-              <button class="fButton">Join!</button>
-            </div>
-          </div>
-          <div class="footerRightMenu">
-            <h1 class="fMenuTitle">Follow Us</h1>
-            <div class="fIcons">
-              <img src="img\icons8-facebook-96.png" alt="" class="fIcon" />
-              <img src="img\icons8-discord-new-96.png" alt="" class="fIcon" />
-              <img src="img\icons8-instagram-96.png" alt="" class="fIcon" />
-              <img src="img\icons8-whatsapp-96.png" alt="" class="fIcon" />
-            </div>
-          </div>
-          <div class="footerRightMenu">
-            <span class="copyright"
-              >@GratosGames. All rights reserved. 2022.</span
-            >
-          </div>
-        </div>
+            <p id="part32" class="flwtext" >Receive our latest offers ⬇ ⬇</p>
+            <input class="emailoff" type="Email" name="email" required=""> 
+            <div class="emailsub">
+              <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Subscribe
+              </button>
+              </div>
+      </div>
       </footer>
     </div>
 
